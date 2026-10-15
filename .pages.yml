@@ -1,0 +1,30 @@
+media:
+  input: images/uploads
+  output: /images/uploads
+
+content:
+  - name: apartamentos
+    label: "Fotos de apartamentos"
+    type: file
+    path: content/apartments.json
+    fields:
+      - { name: foto_a,   label: "Apartamento A", type: image }
+      - { name: foto_b,   label: "Apartamento B", type: image }
+      - { name: foto_c,   label: "Apartamento C", type: image }
+      - { name: foto_d,   label: "Apartamento D", type: image }
+      - { name: foto_e,   label: "Apartamento E", type: image }
+      - { name: foto_f,   label: "Apartamento F", type: image }
+      - { name: foto_g,   label: "Apartamento G", type: image }
+      - { name: foto_h,   label: "Apartamento H", type: image }
+      - { name: foto_vip, label: "Suite VIP",     type: image }
+
+  - name: configuracion
+    label: "Configuracion del sitio"
+    type: file
+    path: content/settings.json
+    fields:
+      - name: whatsapp
+        label: "Numero de WhatsApp (solo digitos)"
+        type: string
+      - { name: foto_hero, label: "Foto de portada (hero)",        type: image }
+      - { name: foto_zona, label: "Foto de la zona / residencial", type: image }
